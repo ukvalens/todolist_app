@@ -257,3 +257,173 @@ footer {
     background-color: #007bff;
     color: white;
 }
+/* Basic styling for the container and sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#signup, #features {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Signup form styling */
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Features section styling */
+#features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.feature {
+    flex: 0 1 auto;
+    margin: 0 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.feature p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    #features {
+        flex-wrap: wrap;
+    }
+    
+    .feature {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Basic styling for the container and sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#login, #images {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Login form styling */
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Images section styling */
+#images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.image-container {
+    flex: 0 1 auto;
+    margin: 0 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    #images {
+        flex-wrap: wrap;
+    }
+    
+    .image-container {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}
