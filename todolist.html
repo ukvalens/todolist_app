@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="topnav">
+                <li><a href="todolist.html">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Welcome to the Ultimate Task Management Tool!</h1>
+            <p>Stay Organized, Stay Productive.</p>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#todo-list">Add Task</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Seamless Task Management: Create, edit, and delete tasks effortlessly.</li>
+                    <li>Priority Setting: Organize tasks by priority and due date.</li>
+                    <li>Reminders & Notifications: Never miss a deadline with timely reminders.</li>
+                    <li>User-friendly Interface: Intuitive design for a smooth user experience.</li>
+                    <li>Sync Across Devices: Access your tasks anytime, anywhere.</li>
+                </ul>
+            </section>
+
+            <section id="todo-list" class="hidden">
+                <h2>Add Task</h2>
+                <div class="input-container">
+                    <input type="date" id="task-date" placeholder="Date">
+                    <input type="time" id="task-start-time" placeholder="Start Time">
+                    <input type="time" id="task-end-time" placeholder="End Time">
+                    <input type="text" id="task-activity" placeholder="Activity">
+                    <button id="add-task-btn">Add Task</button>
+                </div>
+                <ul id="task-list"></ul>
+            </section>
+
+            <section id="notifications" class="hidden">
+                <h2>Notifications</h2>
+                <ul id="notification-list"></ul>
+                <div id="notification-details" class="hidden">
+                    <h3>Notification Details</h3>
+                    <p id="notification-message"></p>
+                </div>
+            </section>
+
+            <section id="dashboard" class="hidden">
+                <h2>Dashboard</h2>
+                <table id="dashboard-task-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Start Time</th>
+                            <th>End Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Task rows will be added here -->
+                    </tbody>
+                </table>
+                <h3>Notifications</h3>
+                <ul id="dashboard-notification-list"></ul>
+            </section>
+            
+            
+            <section id="settings" class="hidden"> <!-- Settings section -->
+                <h2>Settings</h2>
+                <form>
+                    <div class="input-container">
+                        <label for="notification-frequency">Notification Frequency:</label>
+                        <select id="notification-frequency">
+                            <option value="immediate">Immediate</option>
+                            <option value="hourly">Hourly</option>
+                            <option value="daily">Daily</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="theme">Theme:</label>
+                        <select id="theme">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="language">Language:</label>
+                        <select id="language">
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <option value="fr">French</option>
+                        </select>
+                    </div>
+                    <button type="submit">Save Settings</button>
+                </form>
+            
+
+            <section id="contact" class="hidden">
+                <h2>Contact Us</h2>
+                <p>Feel free to reach out to us through our social media channels:</p>
+                <div>
+                    <a href="https://facebook.com">Facebook</a>
+                    <a href="https://twitter.com">Twitter</a>
+                    <a href="https://instagram.com">Instagram</a>
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <h2>Testimonials</h2>
+                <blockquote>"This app changed my life! It's so easy to stay on top of everything." - Jane D.</blockquote>
+                <blockquote>"A must-have for anyone who wants to be productive." - John S.</blockquote>
+            </section>
+        </main>
+    </div>
+
+    <footer class="container">
+        <p>&copy; 2025 To-Do List App. All rights reserved.</p>
+        <div>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+        <p id="current-date"></p>
+    </footer>
+
+    <script src="./js/todolist.js"></script>
+</body>
+</html>
